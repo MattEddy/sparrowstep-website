@@ -1,0 +1,244 @@
+/* Sparrowstep Brand Colors */
+:root {
+  --primary: #4E46E5;        /* Dark blue/indigo */
+  --secondary: #A200AA;      /* Purple */
+  --accent: #6CEBFF;         /* Light blue/cyan */
+  --text-dark: #1a1a1a;
+  --text-medium: #4b5563;
+  --text-light: #6b7280;
+  --bg-light: #f8fafc;
+  --bg-card: #ffffff;
+  --border: #e5e7eb;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2rem 5% 1rem;
+  background: #ffffff;
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg, #4E46E5 0%, #7C3AED 50%, #A200AA 100%) 1;
+}
+
+.header-logo {
+  height: 140px;
+  width: auto;
+  margin-bottom: 0.25rem;
+}
+
+.tagline {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--secondary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 0 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
+}
+
+.hero-text {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.8;
+  background: linear-gradient(135deg, #4E46E5 0%, #7C3AED 50%, #A200AA 100%);
+  padding: 2.5rem 5%;
+}
+
+.hero-text strong {
+  color: #ffffff;
+}
+
+.highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Products Section */
+.products {
+  padding: 2rem 5%;
+  background: linear-gradient(135deg, #EEF2FF 0%, #F5F3FF 50%, #FDF4FF 100%);
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-dark);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  border: 2px solid transparent;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(78, 70, 229, 0.15);
+  border-color: var(--primary);
+}
+
+.product-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.vivi-logo {
+  height: 80px;
+}
+
+.subscriptix-logo {
+  height: 62px;
+  margin-top: 18px;
+}
+
+/* Product-specific fonts */
+.product-card.vivi {
+  font-family: 'Public Sans', sans-serif;
+}
+
+.product-card.subscriptix {
+  font-family: 'Assistant', sans-serif;
+}
+
+.product-tagline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.product-link {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.product-link:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+  padding: 4rem 5%;
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.contact-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.contact p {
+  color: var(--text-medium);
+  margin-bottom: 1.5rem;
+}
+
+.contact-email {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  border-radius: 10px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(78, 70, 229, 0.3);
+}
+
+.contact-email:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(78, 70, 229, 0.4);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #9ca3af;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 3rem 5% 1.5rem;
+  }
+
+  .header-logo {
+    height: 100px;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .products h2,
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-card {
+    padding: 1.5rem;
+  }
+}
