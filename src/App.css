@@ -65,7 +65,7 @@
 }
 
 .highlight {
-  color: var(--accent);
+  color: #B0F5FF; /* --accent lightened: 4.5:1 across the whole gradient */
   font-weight: 600;
 }
 

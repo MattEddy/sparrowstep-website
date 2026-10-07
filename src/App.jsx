@@ -9,9 +9,10 @@ function App() {
       {/* Header */}
       <header className="header">
         <img src={sparrowstepLogo} alt="Sparrowstep" className="header-logo" />
-        <div className="tagline">Technology for Humanity</div>
+        <h1 className="tagline">Technology for Humanity</h1>
       </header>
 
+      <main>
       {/* Hero Section */}
       <section className="hero">
         <p className="hero-text">
@@ -60,6 +61,7 @@ function App() {
           info@sparrowstep.com
         </a>
       </section>
+      </main>
 
       {/* Footer */}
       <footer className="footer">
