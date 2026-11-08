@@ -2,6 +2,7 @@ import './App.css'
 import sparrowstepLogo from './assets/Sparrowstep Logo 2026-01-23.svg'
 import viviLogo from './assets/ViviLogo20251230.svg'
 import subscriptixLogo from './assets/subscriptix-logo.webp'
+import crossleagueLogo from './assets/crossleague-logo.svg'
 
 function App() {
   return (
@@ -48,6 +49,19 @@ function App() {
               face-to-face moments. Because the best memories happen together.
             </p>
             <a href="https://letsvivi.com" className="product-link">Visit letsvivi.com</a>
+          </div>
+
+          {/* Crossleague */}
+          <div className="product-card crossleague">
+            <img src={crossleagueLogo} alt="Crossleague" className="product-logo crossleague-logo" />
+            <p className="product-tagline">Advanced Crossword Time Tracking and Community</p>
+            <p className="product-description">
+              The companion app for avid crossworders. Capture your solve times
+              straight from the puzzle, analyze your performance over any stretch,
+              and make solving social with leagues, tournaments, and daily races
+              against friends.
+            </p>
+            <a href="https://crossleague.app" className="product-link">Visit crossleague.app</a>
           </div>
         </div>
       </section>

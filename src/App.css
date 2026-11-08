@@ -27,6 +27,7 @@
 .header-logo {
   height: 140px;
   width: auto;
+  max-width: 100%;
   margin-bottom: 0.25rem;
 }
 
@@ -85,9 +86,9 @@
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  max-width: 1000px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -116,6 +117,14 @@
   height: 80px;
 }
 
+.crossleague-logo {
+  height: auto;
+  width: 100%;
+  max-width: 260px;
+  margin-top: 20px;
+  margin-bottom: 1.5rem;
+}
+
 .subscriptix-logo {
   height: 62px;
   margin-top: 18px;
@@ -128,6 +137,10 @@
 
 .product-card.subscriptix {
   font-family: 'Assistant', sans-serif;
+}
+
+.product-card.crossleague {
+  font-family: 'Merriweather', Georgia, serif;
 }
 
 .product-tagline {
